@@ -300,7 +300,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#siemens">TARGETED COMPANY</a></li>
+          <li><a href="#company">TARGETED COMPANY</a></li>
           <li><a href="#education">EDUCATION </a></li>
           <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#skills">SKILLS</a></li>
@@ -318,8 +318,6 @@
     <p>Data Analytic Engineer | Web and Application Developer</p>
     <p>Passionate about working on user responsive AI applications.</p>
   </div>
-  <div id="email" onclick="showhideEmail()">Show my email</div>
-  <script type="text/javascript" src="email.js"></script>
   
   <!-- Include the React component for Contact Details -->
   <div id="contact-details"></div>
@@ -364,49 +362,9 @@ course and work together to build the team projects.</p>
       </div>
     </div>
   </div>
-  <div class="jumbotron text-center">
-    <h1>Enjoy a Joke Every Minute!</h1>
-  </div>
+ 
 
-  <!-- Content Section -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-
-        <!-- Joke Container -->
-        <div id="joke-container" class="well">
-          <p>Loading joke...</p>
-        </div>
-
-        <!-- Include Bootstrap JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-        <!-- JokeAPI Script -->
-        <script>
-          function fetchJoke() {
-            $.get("https://v2.jokeapi.dev/joke/Any", function (data) {
-              if (data.type === "twopart") {
-                $("#joke-container").html(`<p><strong>${data.setup}</strong></p><p>${data.delivery}</p>`);
-              } else {
-                $("#joke-container").html(`<p>${data.joke}</p>`);
-              }
-            });
-          }
-
-          // Initial fetch
-          fetchJoke();
-
-          // Fetch a new joke every 1 minute
-          setInterval(fetchJoke, 60000);
-        </script>
-
-      </div>
-    </div>
-  </div><div class="jumbotron text-center">
-    <h1>Weather Information</h1>
-  </div>
-
-  <div id="siemens" class="container-fluid bg-grey">
+  <div id="company" class="container-fluid bg-grey">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
         <h3>Qualifications</h3>
